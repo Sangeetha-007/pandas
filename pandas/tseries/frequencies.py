@@ -391,6 +391,9 @@ def to_offset(freq):
     """
     Return DateOffset object from string or tuple representation
     or datetime.timedelta object
+    
+    d = pd.Timestamp("2000/1/1")
+    d + to_offset("D")*100**25
 
     Parameters
     ----------
